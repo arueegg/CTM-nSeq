@@ -39,5 +39,5 @@ The input has to be an Excel file containing genomic regions for each target in 
 ## Output
 The output will be provided as one Excel file per compatible set of crRNAs (one set equals a pair of forward and reverse crRNAs for each locus). The Sets of crRNAs can be optimized in terms of functions (maximum, minimum variance) as well as onl for the DeepCpf1 score or only the RNAfold score. In addition, all potentiall crRNAs (no filtering), efficiency, and/or specificity filtered crRNAs can be extracted as an Excel file.
 
-## Caveat: Dependency on Manual CRISPOR output
+## Caveat: Dependency on Manually retrieved CRISPOR output
 Due to incompatibility of DeepCpf1 with more recent versions of Python and Tensorflow, we were unable to implement the score directly. If crRNAs should be filtered by CRISPOR and RNAfold scores, it is recommended to first run the script once with the "get_crRNAs_only" option which allows to retrieve the sequences of all target regions (full window-ROI-window sequence) as fasta files. Then use these sequences to run CRISPOR (https://crispor.gi.ucsc.edu/crispor.py), and download "Guides" as Excel table and save in a folder ("folder_CRISPOR_scores"). Tip: run CRISPOR without genome to allow for longer input sequences, and shorter wait times.
