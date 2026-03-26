@@ -3,10 +3,14 @@ The CTM-nSeq crRNAfindR package contains the main CTM_crRNAfindR function, which
 
 ## Installation
 ### Install dependencies via CRAN:
+```
 install.packages(c('crayon', 'data.table', 'dplyr', 'future', 'future.apply', 'LncFinder', 'magrittr', 'pbapply', 'readr', 'readxl', 'S4Vectors',  'stringr', 'tidyr', 'writexl'))
+```
 
 ### Install dependencies via BiocManager:
+```
 BiocManager::install(c("Biostrings","BSgenome.Mmusculus.UCSC.mm39","pwalign", "rBLAST"))
+```
 
 ### Install RNAfold:
 As described on the official homepage:
@@ -24,7 +28,9 @@ https://ftp.ncbi.nlm.nih.gov/blast/db/
 https://github.com/mhahsler/rBLAST
 
 ### Install CTMcrRNAfindR
+```
 install.packages("<path to file>/CTMcrRNAfindR_0.1.0.tar.gz", repos = NULL, type = "source")
+```
 
 ## Input File
 The input has to be an Excel file containing genomic regions for each target in a "bed"-style format. Ideally the file contains the following columns: 
